@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>mycodeschool</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   </head>
+   <body class="size-1280">
+      <!-- TOP NAV WITH LOGO -->
+      <header>
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <img class="s-5 l-12 center" style="height:70px; width:70px;" src="images/logo.png"><br><span style="text-align:center; color:yellow;">ABHIJEET SARAF is a coder</span>
+
+
+               </div>
+               <div class="top-nav s-12 l-10 right">
+                  <p class="nav-text">Custom menu text</p>
+                  <ul class="right">
+                     <li><a href="index.html">Home</a></li>
+                     <li>
+                        <a href="work.html">Work</a>
+                        <ul>
+                           <li><a>Product 1</a></li>
+                           <li><a>Product 2</a></li>
+                           <li>
+                              <a href="notes.html">Notes</a>
+                              <ul>
+                                 <li><a>Product 3-1</a></li>
+                                 <li><a>Product 3-2</a></li>
+                                 <li><a>Product 3-3</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="gallery.html">Gallery</a>
+                        <ul>
+                           <li><a>About</a></li>
+                           <li><a>Location</a></li>
+                        </ul>
+                     </li>
+                     <li><a>Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- ASIDE NAV AND CONTENT -->
+      <div class="line">
+         <div class="box  margin-bottom">
+            <div class="margin2x">
+               <!-- ASIDE NAV 1 -->
+               <aside class="s-12 l-3">
+                  <h3>Navigation</h3>
+                  <div class="aside-nav">
+                     <ul>
+                        <li><a>c code for mergesort</a></li>
+                        <li>
+                           <a>Product</a>
+                           <ul>
+                              <li><a>Product 1</a></li>
+                              <li><a>Product 2</a></li>
+                              <li>
+                                 <a>Product 3</a>
+                                 <ul>
+                                    <li><a>Product 3-1</a></li>
+                                    <li><a>Product 3-2</a></li>
+                                    <li><a>Product 3-3</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a>C code for selection sort</a>
+                           <ul>
+                              <li><a>About</a></li>
+                              <li><a>Location</a></li>
+                           </ul>
+                        </li>
+                        <li><a>Contact</a></li>
+                     </ul>
+                  </div>
+               </aside>
+               <!-- CONTENT -->
+               <section class="s-12 l-6">
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/E6J3UApJGDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="maincol">
+<pre class="brush: cpp; highlight: [15,16,17,18,19,20,21,22,23,24,25]; title: ; notranslate" title="">
+// A C++ program to sort an array in wave form using
+// a sorting function
+#include <stdio.h>
+
+//int A[5]= {0};
+
+
+void print2(int A[], int N,int B[]){
+int sum=0;
+    for (int i =0; i <=N; i++){
+        if(A[i] ==1){
+            printf("%d ",B[i]);
+sum++;
+        }
+    }
+if(sum==0)
+printf("empty");
+
+        printf("\n");
+}
+
+
+void print(int A[], int N){
+
+    for (int i =1; i <=N; i++){
+            printf("%d ",A[i]);
+    }
+        printf("\n");
+}
+
+
+
+void combination(int A[], int k, int N,int B[]) {
+    //printf("k=%d\n",k);
+    if (k==N) {
+        A[k]=0;
+        print2(A,N,B);
+        A[k]=1;
+        print2(A,N,B);
+        return;
+
+    }
+
+
+        A[k]=0;
+        combination(A,k+1,N,B);
+        A[k]=1;
+        combination(A,k+1,N,B);
+
+
+
+}
+
+int main(){
+int n;
+printf("eneter the array size\n");
+scanf("%d",&n);
+int B[n],i;
+int A[n];
+printf("eneter the array elemnts\n");
+for(i=0;i<n;i++){
+scanf("%d",&B[i]);
+A[i]=0;
+}
+printf("-----------------------------------\n");
+ combination(A,0,n-1,B);
+
+}
+
+
+
+</pre>
+               </section>
+               <!-- ASIDE NAV 2 -->
+               <aside class="s-12 l-3">
+                  <h3>Navigation</h3>
+                  <div class="aside-nav">
+                     <ul>
+                        <li><a href="youtube.html">tutorials</a></li>
+                        <li>
+                           <a href="geeks.html">c code for interviews</a>
+                           <ul>
+                              <li><a>Product 1</a></li>
+                              <li><a>Product 2</a></li>
+                              <li>
+                                 <a>Product 3</a>
+                                 <ul>
+                                    <li><a>Product 3-1</a></li>
+                                    <li><a>Product 3-2</a></li>
+                                    <li><a>Product 3-3</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a>Company</a>
+                           <ul>
+                              <li><a>About</a></li>
+                              <li><a>Location</a></li>
+                           </ul>
+                        </li>
+                        <li><a>Contact</a></li>
+                     </ul>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="line">
+        <footer class="box">
+              <div class="s-12 l-6">
+                 <p>Copyright 2018,abhijeetsaraf65-india</p>
+              </div>
+              <div class="s-12 l-6">
+                 <a class="right" href="http://www.github.com" title="Responsee - lightweight responsive framework">Design and coding by abhijeetsaraf65</a>
+              </div>
+           </div>
+        </footer>
+      </div>
+      <script type="text/javascript" src="js/responsee.js"></script>
+   </body>
+</html>

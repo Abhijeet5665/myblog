@@ -1,0 +1,36 @@
+#viva{
+  position: relative;
+  top: 50%;
+ left: 50%;
+ z-index: -100;
+ width: auto;
+ height: auto;
+
+ margin: 1px;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+}
+#new{
+  color: yellow;
+  text-decoration-style: solid;
+  font-family:monospace;
+
+}
+#myimage:{
+  padding: 0px;
+  margin-top: 0px;
+}
+#codes{
+
+padding: 50px;
+margin: 30px;
+text-decoration-style: solid;
+float:inherit;
+
+
+}
+
+#lists-ul{
+  float: left;
+}
